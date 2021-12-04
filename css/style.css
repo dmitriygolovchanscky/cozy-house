@@ -971,12 +971,12 @@ body {
     margin-top: calc(15px + (30-15) * ((100vw - 320px) / (420-320)));
   }
   .donation__card {
-    padding: 11px 10px 12px 10px;
+    padding: 11px 8px 12px 8px;
     max-width: 310px;
   }
   .donation_card-number {
     font-size: 19px;
-    margin-left: 8px;
+    margin-left: 7px;
   }
 }
 
@@ -1164,6 +1164,12 @@ body {
   right: 13px;
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
+}
+
+@media (max-width: 767px) {
+  .back-to-top {
+    display: none;
+  }
 }
 
 body.lock {
