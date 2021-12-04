@@ -160,24 +160,6 @@ body {
 					&:after {
 						bottom: 0;
 					}
-					&.active {
-						span {
-							transform: scale(0);
-							z-index: 0;
-						}
-						&:before {
-							transform: rotate(45deg);
-							top: 9px;
-							background-color: #eec1a0;
-							z-index: 0;
-						}
-						&:after {
-							transform: rotate(-45deg);
-							bottom: 9px;
-							background-color: #eec1a0;
-							z-index: 0;
-						}
-					}
 				}
 				.header__menu {
 					position: fixed;
@@ -189,7 +171,6 @@ body {
 					padding: 50px 10px 20px 10px;
 					transition: all 0.2s ease 0s;
 					overflow: auto;
-					box-shadow: -15px 0px 30px 0px rgba(51, 51, 51, 0.2);
 					.close__menu {
 						width: 30px;
 						height: 30px;
@@ -213,6 +194,7 @@ body {
 					}
 					&.active {
 						right: -20%;
+						box-shadow: -15px 0px 30px 0px rgba(51, 51, 51, 0.2);
 					}
 					.header__list {
 						flex-direction: column;
@@ -225,7 +207,7 @@ body {
 							}
 							&:after {
 								position: absolute;
-								content: '';
+								content: "";
 								width: 20px;
 								height: 2px;
 								top: 50%;
@@ -750,6 +732,9 @@ body {
 	.donation__text {
 		margin-top: calc(15px + (30-15) * ((100vw - 320px) / (420-320)));
 	}
+	.donation_card-number {
+		letter-spacing: 1px;
+	}
 }
 @media (max-width: 344px) {
 	.donation__card {
@@ -758,7 +743,6 @@ body {
 	}
 	.donation_card-number {
 		font-size: 19px;
-		letter-spacing: 1px;
 		margin-left: 8px;
 	}
 }
@@ -864,14 +848,14 @@ body {
 	height: 50px;
 	border-radius: 50%;
 	background-color: #f1cdb3;
-	box-shadow: 0px 0px 1px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
 	transition: all 0.3s ease 0s;
 	opacity: 0;
 	visibility: hidden;
 	transform: scale(0);
 }
 .back-to-top.visible {
-	opacity: 0.9;
+	opacity: 1;
 	visibility: visible;
 	transform: scale(1);
 }
