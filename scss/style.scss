@@ -732,11 +732,6 @@ body {
 	.donation__text {
 		margin-top: calc(15px + (30-15) * ((100vw - 320px) / (420-320)));
 	}
-	.donation_card-number {
-		letter-spacing: 1px;
-	}
-}
-@media (max-width: 344px) {
 	.donation__card {
 		padding: 11px 10px 12px 10px;
 		max-width: 310px;
@@ -746,6 +741,9 @@ body {
 		margin-left: 8px;
 	}
 }
+// @media (max-width: 344px) {
+	
+// }
 
 .footer {
 	padding: 75px 0px 70px 0px;
