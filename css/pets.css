@@ -425,6 +425,10 @@ body {
   margin-left: 20px;
 }
 
+.nav__link .current {
+  background-color: #f1cdb3;
+}
+
 .nav__link a {
   font-family: TimesNewRomanPSMT;
   font-size: 20px;

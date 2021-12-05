@@ -283,6 +283,9 @@ body {
 		margin-right: 0px;
 		margin-left: 20px;
 	}
+	.current {
+		background-color: #f1cdb3;
+	}
 	a {
 		font-family: TimesNewRomanPSMT;
 		font-size: 20px;
@@ -298,6 +301,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		transition: all 0.3s ease 0s;
+		
 		&:hover {
 			background-color: #f1cdb3;
 		}
