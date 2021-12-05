@@ -1,4 +1,3 @@
-
 const iconMenu = document.querySelector('.header__burger,.header__menu');
 const menuBody = document.querySelector('.header__menu');
 const closeMenu = document.querySelector('.close__menu')
